@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/AutoHand/Examples/Scenes/MetaXR/Demo.unity
-    guid: 596ea3599ae73c840a43a7b422b50650
+    path: Assets/Scenes/Main.unity
+    guid: 7b53a040be55c4837acd0ce56bedcbe6
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e0affc873e9e14505bbaec93e4595d64, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: bf482e5966b994cff85bcfd6dbc40ed3, type: 2}
