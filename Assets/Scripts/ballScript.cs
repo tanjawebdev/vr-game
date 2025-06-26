@@ -19,19 +19,21 @@ public class ballScript : MonoBehaviour
 
     void Update()
     {
-        // 1) VR “A” button (primaryButton on right controller)
+        // 1) VR “X” button (primaryButton on left controller)
         List<InputDevice> devices = new List<InputDevice>();
         InputDevices.GetDevicesWithCharacteristics(
-            InputDeviceCharacteristics.Right |
+            InputDeviceCharacteristics.Left |
             InputDeviceCharacteristics.Controller,
             devices);
 
         foreach (var dev in devices)
         {
+
             bool primaryPressed;
             if (dev.TryGetFeatureValue(CommonUsages.primaryButton, out primaryPressed)
                 && primaryPressed)
             {
+                Debug.Log("respawning now");
                 Respawn();
                 return;
             }
