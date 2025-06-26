@@ -12,11 +12,15 @@ public class cupController : MonoBehaviour
             winElement.SetActive(false);
     }
 
+
     // called when something enters this trigger
     private void OnTriggerEnter(Collider other)
     {
+
+        Debug.Log("testttt");
+        Debug.Log(other);
         // only react if it's the bouncy ball
-        if (other.CompareTag("BouncyBall"))
+        if (other.CompareTag("Ball"))
         {
             if (winElement != null)
                 winElement.SetActive(true);
